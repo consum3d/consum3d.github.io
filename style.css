@@ -26,9 +26,11 @@ body {
 /* override the normal margin widths of these elements so they don't look funny
    with the paragraph indents */
 
+/*
 ul, ol, menu, dir { -moz-padding-start: 3.24em }
 blockquote { margin: 1em 3.24em; }
 
+*/
 /* this is a stupid way to make paragraphs in blockquotes less wide.  What I'd
  * really like is to just make the blockquote's 3.24em right margin be inside
  * the 40em max-width, but it's not obvious to me how to do that.  Maybe that's
