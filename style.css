@@ -82,6 +82,6 @@ h4 { letter-spacing: 3px; padding-bottom: 3px; font-size: 14px; }
    generous, leaving almost no space for the text.
  */
 @media all and (max-width : 30em) {
-    body { margin-left: 1em; margin-right: 1em }
+     /* body { margin-left: 1em; margin-right: 1em } */
     h1, h2, h3, h4, h5, h6 { margin-right: -5px }
 }
