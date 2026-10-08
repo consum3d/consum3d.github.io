@@ -15,7 +15,7 @@ body {
      background-position: top left;
      background-repeat: no-repeat;
      background-color: black;
-     margin-left: 13em; margin-right: 7.48em;
+     margin-left: 7.48em; margin-right: 7.48em;
      text-align: justify;
      /* Sadly URW Palladio L looks like shit on current Linuces in Xft,
       * even though it looks fine in GhostScript. FreeSerif is much better. */
