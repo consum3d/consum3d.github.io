@@ -1,0 +1,87 @@
+/* pending changes: 
+   D color headings?
+   D move logo to upper left-hand corner?
+   - move logo back to background?  otherwise darken?
+ */
+
+.explanation { background: #f0f0f0; padding: 1ex; }
+
+/* a lot of the left and right margins are based on the golden ratio (to the
+   line height 1em) */
+
+body { 
+     background-attachment: fixed; 
+     background-image: URL(netscape.jpg); 
+     background-position: top left;
+     background-repeat: no-repeat;
+     background-color: black;
+     margin-left: 13em; margin-right: 7.48em;
+     text-align: justify;
+     /* Sadly URW Palladio L looks like shit on current Linuces in Xft,
+      * even though it looks fine in GhostScript. FreeSerif is much better. */
+     font-family: FreeSerif, Palatino, serif;
+     line-height: 135%;
+}
+
+/* override the normal margin widths of these elements so they don't look funny
+   with the paragraph indents */
+
+ul, ol, menu, dir { -moz-padding-start: 3.24em }
+blockquote { margin: 1em 3.24em; }
+
+/* this is a stupid way to make paragraphs in blockquotes less wide.  What I'd
+ * really like is to just make the blockquote's 3.24em right margin be inside
+ * the 40em max-width, but it's not obvious to me how to do that.  Maybe that's
+ * what the -moz-padding-start was about */
+blockquote p, li { max-width: 33em }
+blockquote blockquote p, blockquote li { max-width: 27em }
+
+pre { 
+     background-color: #f0f0f0;
+     border: 1px solid #e3e3e3;
+     padding: 0.5em;
+}
+
+p { 
+      /* hanging indent for paragraphs */
+      /* text-indent: -1.62em; margin-left: 1.62em; */
+}
+
+p, ul, ol, menu, dir {
+      margin-top: 0.5em; margin-bottom: 0.5em;
+      max-width: 40em;
+      font-family: Verdana;
+	color: grey;
+}
+
+/* pretty headers following the design of 
+http://www.rotten.com/library/conspiracy/al-qaeda-and-the-assassins/missing-link/ 
+ */
+
+h1, h2, h3, h4, h5, h6 {
+      /* I like Palatino better anyway: font-family: Verdana,"Arial Narrow", helvetica, sans-serif; */
+      font-weight: normal;
+      font-variant: small-caps;
+	color: grey;      
+/* color: #a4a; /*
+      border-bottom: 1px solid #e3e3e3;
+      /* this contrasts badly with the background logo: background-color: #fafafa; */
+      text-align: right;
+      /* stick out on the right, but we can't use em --- different headers have
+       * different font sizes, so they wouldn't line up */
+      margin-right: -30px; 
+      margin-bottom: 0.25em; margin-top: 0.25em;
+}
+
+h1 { letter-spacing: 6px; padding-bottom: 6px; font-size: 22px; }
+h2 { letter-spacing: 6px; padding-bottom: 6px; font-size: 18px; }
+h3 { letter-spacing: 4px; padding-bottom: 4px; font-size: 16px; }
+h4 { letter-spacing: 3px; padding-bottom: 3px; font-size: 14px; }
+
+/* On small-screen devices like phones, my normal margins are far too
+   generous, leaving almost no space for the text.
+ */
+@media all and (max-width : 30em) {
+    body { margin-left: 1em; margin-right: 1em }
+    h1, h2, h3, h4, h5, h6 { margin-right: -5px }
+}
