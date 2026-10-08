@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
       text-align: right;
       /* stick out on the right, but we can't use em --- different headers have
        * different font sizes, so they wouldn't line up */
-      margin-right: -30px; 
+      margin-right: -10px; 
       margin-bottom: 0.25em; margin-top: 0.25em;
 }
 
