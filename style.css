@@ -21,7 +21,7 @@ body {
      text-align: justify;
      /* Sadly URW Palladio L looks like shit on current Linuces in Xft,
       * even though it looks fine in GhostScript. FreeSerif is much better. */
-     font-family: FreeSerif, Palatino, serif;
+     font-family: Verdana, FreeSerif, Palatino, serif;
      line-height: 135%;
 }
 
